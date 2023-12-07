@@ -1,0 +1,287 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+:root {
+     
+    --orange: #ff9505;
+    --orangeRed: #ec4e20;
+    --gray: #353531;
+    --lightgray: #eee;
+    --white: #fff;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.py-5 {
+
+    padding: 120px 0 !important;
+}
+
+h2::after {
+
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: var(--orange);
+
+}
+
+
+/******navbar********/
+
+.navbar {
+    background: rgba(53, 53, 49, .9) !important;
+}
+
+.navbar-brand {
+
+    color: var(--orange) !important;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.navbar-brand:hover {
+
+    color: var(--orangeRed) !important;
+    transition: .4 ease;
+
+}
+
+.navbar .navbar-nav .nav-link {
+
+    color: var(--white);
+    text-transform: uppercase;
+    padding-left: 30px;
+    
+}
+.navbar .navbar-nav .nav-link:hover {
+
+    color: var(--orange);
+    transition: .4 ease;
+
+}
+.navbar-toggler {
+
+    background-color: var(--orange);
+
+}
+
+
+/******header jumbotron********/
+
+.header {
+
+    background-image:  linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url(img/header.jpg) !important; 
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px !important;
+    padding: 200px 0 !important;
+    margin-bottom: 0;
+    
+}
+
+.btn-warning {
+    background: var(--orange);
+    border: 0;
+
+}
+
+.btn-warning:hover {
+    background: var(--orangeRed);
+    
+}
+
+/******numbers********/
+
+#numbers {
+    background: var(--gray);
+    color: var(--white);
+    text-align: center;
+
+}
+#numbers i {
+
+    color: var(--orange);
+    font-size: 5rem;
+    margin-bottom: 30px;
+
+}
+
+#numbers h3 {
+
+    color: var(--lightgray);
+    font-size: 2.2rem;
+
+}
+
+#numbers h4 {
+
+    color: var(--orange);
+    font-size: 1.2rem;
+
+}
+
+
+/******portfolio********/
+
+#portfolio .card {
+
+    position: relative;
+    margin-bottom: 2em;
+
+}
+
+#portfolio .card-text{
+    padding: 30px;
+
+}
+
+#portfolio .corner-text {
+
+    position:absolute;
+    top: 0;
+    right: 0;
+    background: var(--orange);
+    color: var(--white);
+
+}
+
+#portfolio .corner-text p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: 400;
+
+}
+
+#portfolio img {
+
+    transition: transform 3s ease-in-out;
+}
+
+#portfolio .holder {
+
+    overflow: hidden;
+
+}
+
+#portfolio img:hover {
+
+    transform: scale(1.1)
+}
+
+
+/******projects********/
+
+#projects {
+
+    background: var(--lightgray);
+
+}
+
+
+/******our team********/
+
+
+#ourteam {
+
+    text-align: center;
+
+}
+
+#ourteam img {
+
+    border-radius: 50%;
+}
+
+
+/******footer********/
+
+footer {
+
+    background: var(--orange);
+
+}
+
+footer a {
+
+    color: var(--gray);
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+footer a:hover {
+
+    color: var(--white);
+    transition: .7s ;
+
+}
+
+footer i:hover {
+
+    animation: footer 0.7s ease; 
+}
+
+@keyframes footer {
+
+    100% { transform: rotate(360deg);}
+
+}
+
+footer h3 {
+
+    margin-top: 30px; 
+}
+
+footer h2::after {
+
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: var(--gray);
+
+}
+
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 150px 20px;}
+
+        .header h2 {
+
+            font-size: 3rem ;
+        }
+
+        h2 {
+            font-size: 3rem !important;
+        }
+
+        .py-5 {
+
+            padding: 80px 0 !important;
+        }
+        
+
+
+
+}
